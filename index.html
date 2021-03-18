@@ -10,269 +10,39 @@
 <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-<style>
-    @font-face {
-        font-family: Bembo;
-        /*src: url("BemboStd.woff");*/
-        src: url("fonts/BemboStd.otf") format("opentype");
-    }
-    html,
-    body{
-        font-size: 39px; 
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: Bembo;
-        text-align: left;
-        color: #080a0b;
-       
-        background-color: #f9f2e5;
-        letter-spacing : 0.1rem; 
-        vertical-align: middle;
-        -webkit-font-smoothing: antialiased;
 
-        overflow-x: hidden;
+<!-- Preventing IE11 to request by default the /browserconfig.xml more than one time -->
+<meta name="msapplication-config" content="none">
+<!-- Disable touch highlighting in IE -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- Ensure edge compatibility in IE (HTTP header can be set in web server config) -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<!-- Force viewport width and pixel density. Plus, disable shrinking. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Disable Skype browser-plugin -->
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-    }
-    h1{
-        font-size: 1.5rem;
-        font-weight: 100;
-        font-style: normal;
-        text-transform: uppercase;
-        padding-bottom: 0.27rem;
+<link rel='stylesheet' href='style.css?v=5' type='text/css' media='all' />
 
-    }
-    a{
-        color: #080a0b;
-        text-decoration: none;
-    }
-    a:hover{
-        /*color:  #000082;*/
-        font-style: italic;
-    }
-    p{
-        display: block;
-    }
-    span{
-        display: inline-block;
-        width: 0.69rem;
-    }
-    .outer {
-      display: table;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-    }
-
-    .inner {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .left,
-    .right{
-        margin: 1.94rem;
-        margin-top: 1.8rem;
-    }
-
-    .left{
-        position: fixed;
-        text-align: center;
-        margin-left: 2.7rem;
-        margin-right: 2.7rem;
-    }
-
-    .left h1,
-    .left p{
-        font-size: 0.8rem;
-    }
-
-    .right{
-        margin-left: 30%;
-        width: 70%;
-    }
-
-    .right h2{
-        font-weight: 400;
-        font-size: 1rem;
-        position: relative;
-        margin-bottom: 0.4rem;
-        margin-top: 1rem;
-    }
-/*    .right h2:before{
-        position: absolute;
-        content: "";
-        top: -0.27rem;
-        left: 0px;
-        right: 0px;
-        height: 1.4px;
-        background-color: #080a0b;
-    }*/
-
-    .accordion{
-        border-top: solid 1.4px #080a0b;
-    }
-
-    .accordion:last-of-type{
-        border-bottom: solid 1.4px #080a0b;
-    }
-
-
-    .logo{
-        width: 90px;
-        padding: 1.9rem 0 0;
-    }
-
-    .content{
-        opacity: 1;
-        max-height: 0px;
-        overflow: hidden;
-        padding-left: 60px;
-    }
-    input[type='checkbox']{
-        display: none;
-    }
-    .right h2:hover,
-    input[type='checkbox']:checked ~ h2{
-        font-style: italic;
-    }    
-    input[type='checkbox']:checked ~ .content{
-        opacity: 1;
-        max-height: 9000px;
-        padding-bottom: 0px;
-    }
-    .mobile{
-        display: none;
-        text-align: center;
-    }
-
-    @media only screen and (max-width: 1900px) {
-        .right {
-            margin-left: 40%;
-            width: 60%;
-        }
-    }
-
-    @media only screen and (max-width: 1400px) {
-        html,
-        body{
-            font-size: 28px; 
-        }
-       .left{
-          margin: 40px;
-       }
-    }
-
-    @media only screen and (max-width: 1150px) {
-
-        .right{
-            width: 50%;
-        }
-    }
-
-
-    @media only screen and (max-width: 990px) {
-        html,
-        body{
-            font-size: 38px; 
-        }        
-        .left{
-            display: none;
-        }
-        .right{
-            width: 85%;
-            padding: 30px;
-            margin: 40px;
-        }
-        .inner {
-            display: block;
-        }
-        .logo{
-            width: 150px;
-        }
-        img{
-            max-width: 400px;
-        }
-        .mobile{
-            display: block;
-        }
-        .mobile h1{
-            font-size: 0.8rem;
-        }
-        .mobile p{
-            font-size: 0.8rem;
-        }  
-    }
-
-</style>
 </head>
-<body>
+<body class="home">
 <div class="outer">
-  <div class="middle">
-    <div class="inner">
-        <div class="left">
-            <img class="logo" src="images/logo.svg" alt="logo" />
-            <h1>Shiatsu Studio</h1>
-            <p>
-                <a href="https://goo.gl/maps/2AzofeGwhBu" title="Map" target="_blank">Rüschlistrasse 5<br/>
-                2502 Biel-Bienne</a> <br/>
-                <a href="tel:+41774165026" title="077 416 50 26">077 416 50 26</a><br/>
-                <a href="mailto:steven@shiatsu-studio.ch" title="steven@shiatsu-studio.ch">steven@shiatsu-studio.ch</a> <br/>
-            </p>
+    <div class="header">
+        <div class="menu">
+            <div><h1>Shiatsu Studio</h1></div>
         </div>
-        <div class="right">
-
-            <div class="accordion">
-                <input type="checkbox" id="ac1" />
-                <h2><label for="ac1">Shiatsu</label></h2>
-                <div class="content">
-                    <p>Freilebende Gummibärchen gibt es nicht. Man kauft sie in Packungen an der Kinokasse. Dieser Kauf ist der Beginn einer fast erotischen und sehr ambivalenten Beziehung Gummibärchen-Mensch. Zuerst genießt man. Dieser Genuß umfaßt alle Sinne. Man wühlt in den Gummibärchen, man fühlt sie. Gummibärchen haben eine Konsistenz wie weichgekochter Radiergummi.</p>
-                    <p><img width="600" src="images/bild-1.png" /></p>
-                </div>
-            </div>
-            <div class="accordion">
-                <input type="checkbox" id="ac2" />
-                <h2><label for="ac2">Behandlung</label></h2>
-                <div class="content">
-                    <p>Freilebende Gummibärchen gibt es nicht. Man kauft sie in Packungen an der Kinokasse. Dieser Kauf ist der Beginn einer fast erotischen und sehr ambivalenten Beziehung Gummibärchen-Mensch. Zuerst genießt man. Dieser Genuß umfaßt alle Sinne. Man wühlt in den Gummibärchen, man fühlt sie. Gummibärchen haben eine Konsistenz wie weichgekochter Radiergummi.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <input type="checkbox" id="ac3" />
-                <h2><label for="ac3">Übermich</label></h2>
-                <div class="content">
-                    <p>Freilebende Gummibärchen gibt es nicht. Man kauft sie in Packungen an der Kinokasse. Dieser Kauf ist der Beginn einer fast erotischen und sehr ambivalenten Beziehung Gummibärchen-Mensch. Zuerst genießt man. Dieser Genuß umfaßt alle Sinne. Man wühlt in den Gummibärchen, man fühlt sie. Gummibärchen haben eine Konsistenz wie weichgekochter Radiergummi.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <input type="checkbox" id="ac4" />
-                <h2><label for="ac4">Praxis</label></h2>
-                <div class="content">
-                    <p>Freilebende Gummibärchen gibt es nicht. Man kauft sie in Packungen an der Kinokasse. Dieser Kauf ist der Beginn einer fast erotischen und sehr ambivalenten Beziehung Gummibärchen-Mensch. Zuerst genießt man. Dieser Genuß umfaßt alle Sinne. Man wühlt in den Gummibärchen, man fühlt sie. Gummibärchen haben eine Konsistenz wie weichgekochter Radiergummi.</p>
-                </div>
-            </div>
-            <div class="accordion">
-                <input type="checkbox" id="ac5" />
-                <h2><label for="ac5">Feedback</label></h2>
-                <div class="content">
-                    <p>Freilebende Gummibärchen gibt es nicht. Man kauft sie in Packungen an der Kinokasse. Dieser Kauf ist der Beginn einer fast erotischen und sehr ambivalenten Beziehung Gummibärchen-Mensch. Zuerst genießt man. Dieser Genuß umfaßt alle Sinne. Man wühlt in den Gummibärchen, man fühlt sie. Gummibärchen haben eine Konsistenz wie weichgekochter Radiergummi.</p>
-                </div>
-            </div>
-        </div>
-        <div class="mobile">
-            <img class="logo" src="images/logo.svg" alt="logo" />
-            <h1>Shiatsu Studio</h1>
-            <p>
-                <a href="https://goo.gl/maps/2AzofeGwhBu" title="Map" target="_blank">Rüschlistrasse 5<br/>
-                2502 Biel-Bienne</a> <br/>
-                <a href="tel:+41774165026" title="077 416 50 26">077 416 50 26</a><br/>
-                <a href="mailto:steven@shiatsu-studio.ch" title="steven@shiatsu-studio.ch">steven@shiatsu-studio.ch</a> <br/>
-            </p>
-        </div>        
     </div>
-  </div>
+    <div class="content">
+        <div><a href="/behandlung.html"><img class="logo" style="color:white;" src="images/logo_w.svg" alt="logo" /></a></div>
+    </div>
+
+    <div class="footer">
+        <p>
+            Steven Grütter&nbsp;&nbsp;Shiatsu Therapeut<br/>
+            <a href="tel:+41774165026" title="077 416 50 26">077 416 50 26</a>&nbsp;&nbsp;<a href="mailto:steven@shiatsu-studio.ch" title="steven@shiatsu-studio.ch">steven@shiatsu-studio.ch</a> <br/>
+            <a href="https://goo.gl/maps/2AzofeGwhBu" title="Map" target="_blank">Rüschlistrasse 5&nbsp;&nbsp;2502 Biel-Bienne</a> <br/>
+        </p>
+    </div>        
 </div>
 </body>
 </html>
