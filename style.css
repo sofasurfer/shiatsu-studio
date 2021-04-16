@@ -300,6 +300,8 @@
         .footer{
             position:relative;
             margin-top: 0.5rem;
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
         }
         .home .footer{
             position:fixed;
