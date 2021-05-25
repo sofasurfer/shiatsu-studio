@@ -10,39 +10,94 @@
 <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<style>
+    @font-face {
+        font-family: Bembo;
+        /*src: url("BemboStd.woff");*/
+        src: url("fonts/BemboStd.otf") format("opentype");
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Bembo;
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;        
+        background-color: #000082;
+        letter-spacing : 0.1rem; 
+        vertical-align: middle;
+        -webkit-font-smoothing: antialiased;
 
-<!-- Preventing IE11 to request by default the /browserconfig.xml more than one time -->
-<meta name="msapplication-config" content="none">
-<!-- Disable touch highlighting in IE -->
-<meta name="msapplication-tap-highlight" content="no">
-<!-- Ensure edge compatibility in IE (HTTP header can be set in web server config) -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<!-- Force viewport width and pixel density. Plus, disable shrinking. -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Disable Skype browser-plugin -->
-<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    }
+    h1{
+        font-size: 1.5rem;
+        font-weight: 100;
+        font-style: normal;
+        text-transform: uppercase;
+        padding-bottom: 10px;
 
-<link rel='stylesheet' href='style.css?v=5' type='text/css' media='all' />
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color:  #000082;;
+        /*text-decoration: underline;*/
+    }
+    span{
+        display: inline-block;
+        width: 25px;
+    }
+    .outer {
+      display: table;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
 
+    .middle {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+    }    
+
+    .logo{
+        width: 150px;
+        padding: 2.5rem;
+    }
+/*
+    @media only screen and (max-width: 1100px) {
+        body{
+            font-size: 2rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
+    }*/
+
+</style>
 </head>
-<body class="home">
+<body>
 <div class="outer">
-    <div class="header">
-        <div class="menu">
-            <div><h1>Shiatsu Studio</h1></div>
-        </div>
-    </div>
-    <div class="content">
-        <div><a href="/behandlung.html"><img class="logo" style="color:white;" src="images/logo_w.svg" alt="logo" /></a></div>
-    </div>
+  <div class="middle">
+    <div class="inner">
+        <h1>Shiatsu Studio</h1>
 
-    <div class="footer">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+
         <p>
-            Steven Grütter&nbsp;&nbsp;Shiatsu Therapeut<br/>
-            <a href="tel:+41774165026" title="077 416 50 26">077 416 50 26</a>&nbsp;&nbsp;<a href="mailto:steven@shiatsu-studio.ch" title="steven@shiatsu-studio.ch">steven@shiatsu-studio.ch</a> <br/>
-            <a href="https://goo.gl/maps/2AzofeGwhBu" title="Map" target="_blank">Rüschlistrasse 5&nbsp;&nbsp;2502 Biel-Bienne</a> <br/>
+        Steven Grütter<span></span>Shiatsu Therapeut <br/>
+        <a href="tel:+41774165026" title="077 416 50 26">077 416 50 26</a><span></span><a href="mailto:steven@shiatsu-studio.ch" title="steven@shiatsu-studio.ch">steven@shiatsu-studio.ch</a> <br/>
+        <a href="https://goo.gl/maps/2AzofeGwhBu" title="Map" target="_blank">Rüschlistrasse 5<span></span>2502 Biel-Bienne</a> <br/>
+        www.shiatsu-studio.ch<br/>
         </p>
-    </div>        
+    </div>
+  </div>
 </div>
 </body>
 </html>
