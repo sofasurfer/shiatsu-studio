@@ -1,0 +1,339 @@
+
+    @font-face {
+        font-family: Bembo;
+        /*src: url("BemboStd.woff");*/
+        src: url("fonts/BemboStd.otf") format("opentype");
+    }
+    html,
+    body{
+        font-size: 20px;
+        -webkit-text-size-adjust: 100%;
+    }
+    body{
+        margin: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding: 0;
+        font-family: Bembo;
+        text-align: center;
+        color: #000082;
+       
+        background-color: #ffffff;
+        letter-spacing : 0.05rem; 
+        vertical-align: middle;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+    }
+
+    body.home{
+        color: white;
+        background-color: #000082;
+    }
+
+
+    h1{
+        font-size: 1rem;
+        font-weight: 100;
+        font-style: normal;
+        text-transform: uppercase;
+        padding-bottom: 0;
+        padding: 0;
+        margin: 0;
+
+    }
+    a{
+        color: #000082;
+        text-decoration: none;
+    }
+    a:hover{
+        /*color:  #000082;*/
+        font-style: italic;
+    }
+    a.active {
+        font-style: italic;
+    }
+    p{
+        display: block;
+        margin-top: 0;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+    figure{
+        padding: 0;
+        margin: 0;
+    }
+    span{
+        display: inline-block;
+        width: 0.69rem;
+    }
+
+    .logo{
+        width: 4rem;
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;        
+    }
+    .menu div{
+        width: 33.33%;
+    }
+    .home .menu div{
+        width: 100%;
+    }
+    .menu .nav{
+        text-align: left;
+    }
+
+    .menu ul{
+        padding-left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li{
+        display: inline-block;
+        list-style: none;
+        padding-right: 1rem;
+    }
+
+    .content{
+        text-align: left;
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+        width: 35%;
+    }
+
+    .content p{
+        margin-bottom: 0px;
+    }
+
+    .image{
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+
+    }
+
+
+    figure img{
+        height: 350px;
+    }
+
+    body.home .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height: calc(100vh - 7rem);
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    body.home .content div{
+
+    }
+    body.home a{
+        color: white;
+    }
+
+    .header,
+    .footer{
+        z-index: 4;
+        position: fixed;
+        top: 0rem;
+        left: 0;
+        right: 0;
+        padding-top: 1rem;
+        padding-bottom: .08rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.88);
+    }
+
+    .social{
+        z-index: 8;
+        position: fixed;
+        left: 0;
+        bottom: 0.6rem;
+
+    }
+    .social a{
+        padding-left: 1.5rem;
+    }
+
+    .social img{
+        height: 1.5rem;
+    }
+
+    .s_ig{
+        position: absolute;
+        margin-top: 0.08rem;
+    }
+
+    .s_ig img{
+        height: 1.3rem;
+        padding-top: 0.13rem;
+    }
+
+    .footer{
+        position: fixed;
+        top: auto;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 1.5rem;
+    }
+
+    .footer p{
+        margin-bottom: 0.5rem;
+    }
+
+    body.home .header,
+    body.home .footer{
+        background-color: transparent;
+    }
+
+    #langswitch{
+        display:  block;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #langswitch li{
+        display:  inline-block;
+        list-style: none;
+        padding:  0px 0.3rem;
+    }
+
+    @media only screen and (min-width: 1900px) {
+        html,
+        body{
+            font-size: 32px; 
+        }
+        figure img{
+            height: 550px;
+        }    
+    }
+
+    @media only screen and (max-width: 1100px) {  
+        html,
+        body{
+            font-size: 20px; 
+            /*border: solid 2px aqua; */
+        }       
+        .left{
+            display: none;
+        }
+        .right{
+            width: auto;
+            margin: 40px;
+        }
+        .inner {
+            display: block;
+        }
+        .logo{
+            width: 90px;
+        }
+        img{
+            max-width: 100%;
+        }
+        figure img{
+            height: auto;
+        }
+        .social{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: -3rem;
+        }
+        .social a{
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+        .image{
+            height: auto;
+        }
+        .image img{
+            max-width: 26rem;
+        }        
+        .image.portrait img{
+            max-width: 13.1rem;
+        }
+        .mobile{
+            display: block;
+        }
+
+        .menu{
+            flex-direction: column-reverse;             
+        }
+        .menu div{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .menu .nav{
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .menu .logo{
+            margin-bottom: 0.5rem;
+        }
+
+        .home .menu{
+            margin-top: 1rem;
+        }
+        .header,.footer{
+            padding: 0px;
+        }
+        .header{
+            padding-bottom: 1rem;
+        }
+        .content{
+            text-align: left;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        .image{
+            position: relative;
+            width: 100%;
+            display: block;
+            right: auto;
+        }
+
+        .footer{
+            position:relative;
+            margin-top: 0.5rem;
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+        }
+        .home .footer{
+            position:fixed;
+        }
+    }
+
+    @media only screen and (max-width: 600px) { 
+        .image img{
+            max-width: 100%;
+        }
+    }
+
+/*    @media only screen and (max-width: 600px) { 
+            html,
+            body{
+                font-size: 34px; 
+            }
+    }*/
