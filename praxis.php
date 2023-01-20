@@ -20,7 +20,7 @@ include 'tpl/header.php';
     </div>
     <div class="content">
         <p>Die Praxis befindet sich im Zentrum von Biel und ist zu Fuss oder mit öffentlichen Verkehrsmitteln gut erreichbar. Um einen Termin zu vereinbaren, können sie mich via email oder telefonisch kontaktieren. Gerne berate ich sie persönlich. Ich spreche Deutsch, Französisch, Italienisch, Englisch.</p>
-        <p>Eine Shiatsu-Behandlung dauert rund eine Stunde und kostet 130.- CHF.</p>
+        <p>Eine Shiatsu-Behandlung dauert rund eine Stunde und kostet 140.- CHF.</p>
         <P>Die Behandlung wird von der komplementären Zusatzversicherung anerkannt.</p>
     </div>
 
