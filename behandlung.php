@@ -18,7 +18,7 @@ include 'tpl/header.php';
             <div>
                 <ul id="langswitch">
                     <li><a href="/behandlung.php" class="active">De</a></li>
-                    <li><a href="/behandlung.php">Fr</a></li>
+                    <li><a href="/fr/traitement.php">Fr</a></li>
                 </ul>               
             </div>
         </div>

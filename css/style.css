@@ -2,7 +2,7 @@
     @font-face {
         font-family: Bembo;
         /*src: url("BemboStd.woff");*/
-        src: url("fonts/BemboStd.otf") format("opentype");
+        src: url("/fonts/BemboStd.otf") format("opentype");
     }
     html,
     body{
@@ -206,11 +206,16 @@
     body.home .footer{
         background-color: transparent;
     }
-
+    body.home #langswitch{
+        float:none;
+        margin-right: 0px;
+    }
     #langswitch{
         display:  block;
         padding-left: 0;
         text-align: center;
+        float: right;
+        margin-right: 10px;
     }
 
     #langswitch li{

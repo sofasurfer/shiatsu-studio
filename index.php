@@ -15,7 +15,7 @@ include 'tpl/header.php';
             <a href="/behandlung.php"><img class="logo" style="color:white;" src="images/logo_w.svg" alt="logo" /></a>
             <ul id="langswitch">
                 <li><a href="/behandlung.php">DE</a></li>
-                <li><a href="/behandlung.php">FR</a></li>
+                <li><a href="/fr/traitement.php">FR</a></li>
             </ul>
         </div>
     </div>

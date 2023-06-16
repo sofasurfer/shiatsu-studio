@@ -15,7 +15,12 @@ include 'tpl/header.php';
                 </ul>
             </div>
             <div class="logo"><a href="/"><h1>Shiatsu Studio</h1></a></div>
-            <div></div>
+            <div>
+                <ul id="langswitch">
+                    <li><a href="/portrait.php" class="active">De</a></li>
+                    <li><a href="/fr/portrait.php">Fr</a></li>
+                </ul> 
+            </div>
         </div>
     </div>
     <div class="content">
