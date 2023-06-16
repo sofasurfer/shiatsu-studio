@@ -1,5 +1,5 @@
 <?php
-
+$LANGUAGE = 'de_DE';
 include 'tpl/header.php';
 
 ?>

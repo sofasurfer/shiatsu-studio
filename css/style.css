@@ -307,7 +307,7 @@
         }
         .content{
             text-align: left;
-            margin-top: 4rem;
+            margin-top: 6.5rem;
             margin-bottom: 2rem;
             width: 100%;
         }
@@ -327,6 +327,11 @@
         }
         .home .footer{
             position:fixed;
+        }
+
+        #langswitch{
+            float:none;
+            margin-top: 1rem;
         }
     }
 
