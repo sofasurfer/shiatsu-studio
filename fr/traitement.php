@@ -1,7 +1,6 @@
 <?php
-
+$LANGUAGE = 'fr_FR';
 include '../tpl/header.php';
-
 ?>
 <body class="behandlung">
 <div class="outer">
