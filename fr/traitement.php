@@ -38,7 +38,7 @@ include '../tpl/header.php';
 
     <div class="footer">
         <p>
-            Steven Grütter&nbsp;&nbsp;Thérapeute de shiatsu<br/>
+            Steven Grütter&nbsp;&nbsp;Thérapeute de Shiatsu<br/>
             <a href="tel:+41774165026" title="077 416 50 26">077 416 50 26</a>&nbsp;&nbsp;<a href="mailto:steven@shiatsu-studio.ch" title="steven@shiatsu-studio.ch">steven@shiatsu-studio.ch</a>&nbsp;
             <a href="https://goo.gl/maps/2AzofeGwhBu" title="Map" target="_blank">Rue du Rüschli 5&nbsp;&nbsp;2502 Biel-Bienne</a> <br/>
         </p>
