@@ -343,6 +343,10 @@
             width: 100%;
         }
 
+        .content.privacy{
+            margin-top: 7.5rem;
+        }
+
         .image{
             position: relative;
             width: 100%;
