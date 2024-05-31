@@ -23,7 +23,7 @@ include 'tpl/header.php';
         </div>
     </div>
     <div class="content">
-        <p>Ich bin eidgenössisch diplomierter Shiatsu Therapeut und Dozent an der Internationalen Shiatsu Schule Kiental. In meiner Praxis biete ich Behandlungen, sowie Beratungen und Kurse an.</p>
+        <p>Ich bin diplomierter Shiatsu Therapeut und Dozent an der Internationalen Shiatsu Schule Kiental. In meiner Praxis biete ich Behandlungen, sowie Beratungen und Kurse an.</p>
         <p>Mein Interesse an der Verbindung von Körper und Energie entdeckte ich bereits in jungen Jahren durch Tai Chi. Nach einer Lehre als Optiker und diverse Berufserfahrungen im Sozialen und kulturellen Bereich absolvierte ich ein mehrjähriges Studium an der Internationalen Shiatsu Schule Kiental. Neben meiner langjährigen Erfahrung als Körpertherapeut entwickle ich mich durch jährliche Fortbildungen, u.a. in osteopathischer Ausrichtung und therapeutischer Diätetik, stetig weiter.</p>
     </div>
 
@@ -33,19 +33,10 @@ include 'tpl/header.php';
         </figure>
     </div>
 
-    <div class="footer">
-        <p>
-            Steven Grütter&nbsp;&nbsp;Shiatsu Therapeut<br/>
-            <a href="tel:+41774165026" title="077 416 50 26">077 416 50 26</a>&nbsp;&nbsp;<a href="mailto:steven@shiatsu-studio.ch" title="steven@shiatsu-studio.ch">steven@shiatsu-studio.ch</a>&nbsp;
-            <a href="https://goo.gl/maps/2AzofeGwhBu" title="Map" target="_blank">Rüschlistrasse 5&nbsp;&nbsp;2502 Biel-Bienne</a> <br/>
-        </p>
-    </div>       
-
-    <div class="social">
-        <a class="s_fb" target="_blank" href="https://www.facebook.com/StevenGruetter/"><img src="images/Facebook_neu.svg" /></a>
-        <a class="s_ig" target="_blank" href="https://www.instagram.com/shiatsustudio/"><img src="images/Instagram_neu.svg" /></a>
-    </div>
-
+    <?php
+    include 'tpl/footer_de.php';
+    ?>
+    
 </div>
 
 <?php

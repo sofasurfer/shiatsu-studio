@@ -27,6 +27,6 @@
     <!-- Disable Skype browser-plugin -->
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-    <link rel='stylesheet' href='../css/style.css?v=8' type='text/css' media='all' />
+    <link rel='stylesheet' href='../css/style.css?v=11' type='text/css' media='all' />
 
 </head>

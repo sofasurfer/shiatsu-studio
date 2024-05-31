@@ -106,6 +106,22 @@
         width: 35%;
     }
 
+    .content.privacy{
+        margin-top: 3rem;
+    }
+    
+    .content.privacy h2{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .content.privacy p{
+        margin-top: 0px;
+        padding-top: 0.5rem;
+    }
+
     .content p{
         margin-bottom: 0px;
     }
@@ -160,6 +176,14 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         background-color: rgba(255, 255, 255, 0.88);
+    }
+
+
+    .privacy_menu{
+        z-index: 8;
+        position: fixed;
+        right: 1.5rem;
+        bottom: 0.6rem;
     }
 
     .social{
@@ -267,6 +291,13 @@
         .social a{
             padding-left: 0.75rem;
             padding-right: 0.75rem;
+        }    
+        .privacy_menu{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+            right:0;
         }
         .image{
             height: auto;
@@ -333,6 +364,7 @@
             float:none;
             margin-top: 1rem;
         }
+
     }
 
     @media only screen and (max-width: 600px) { 
